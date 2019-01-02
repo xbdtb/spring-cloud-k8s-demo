@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: native
   application:
     name: employee-service
   cloud:

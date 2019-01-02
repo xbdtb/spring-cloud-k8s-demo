@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: native
   application:
     name: organization-service
   cloud:
