@@ -2,8 +2,7 @@ FROM xbdtb/maven:3.6.0-jdk-8-alpine-1 as builder
 RUN mkdir /app
 ADD . /app
 WORKDIR /app
-RUN mvn -Djar.finalName=app.jar install
-RUN ls target
+RUN mvn install
 
 FROM openjdk:8-jre-alpine
 RUN mkdir /app
